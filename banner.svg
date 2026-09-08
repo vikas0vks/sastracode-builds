@@ -1,57 +1,61 @@
 <svg width="1280" height="300" viewBox="0 0 1280 300" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#111A33"/>
+      <stop stop-color="#090E1C"/>
+      <stop offset="0.55" stop-color="#101736"/>
+      <stop offset="1" stop-color="#1B1040"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#5B8CFF"/>
-      <stop offset="0.5" stop-color="#8B7CFF"/>
-      <stop offset="1" stop-color="#C77DFF"/>
+    <linearGradient id="wordmark" x1="0" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#818CF8"/>
     </linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#DCE4FF"/>
-    </linearGradient>
-    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 60) rotate(90) scale(380)">
-      <stop stop-color="#6C8CFF" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#6C8CFF" stop-opacity="0"/>
+    <radialGradient id="glowC" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 150) rotate(0) scale(420)">
+      <stop stop-color="#22D3EE" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 260) rotate(180) scale(300)">
-      <stop stop-color="#C77DFF" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#C77DFF" stop-opacity="0"/>
+    <radialGradient id="glowV" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1150 40) rotate(0) scale(340)">
+      <stop stop-color="#A78BFA" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
-      <path d="M 56 0 L 0 0 0 56" fill="none" stroke="#8FA3D9" stroke-opacity="0.06" stroke-width="1"/>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#7C93D4" fill-opacity="0.10"/>
     </pattern>
   </defs>
 
   <rect width="1280" height="300" fill="url(#bg)"/>
-  <rect width="1280" height="300" fill="url(#grid)"/>
-  <rect width="1280" height="300" fill="url(#glow1)"/>
-  <rect width="1280" height="300" fill="url(#glow2)"/>
+  <rect width="1280" height="300" fill="url(#dots)"/>
+  <rect width="1280" height="300" fill="url(#glowC)"/>
+  <rect width="1280" height="300" fill="url(#glowV)"/>
 
-  <!-- left accent bar -->
-  <rect x="0" y="0" width="6" height="300" fill="url(#accent)"/>
-
-  <!-- code decoration, right side -->
-  <g font-family="Consolas, monospace" fill="#8FA3D9" fill-opacity="0.5">
-    <text x="940" y="86" font-size="20">$ adb install SastraCode.apk</text>
-    <text x="960" y="122" font-size="20">Success</text>
-    <text x="940" y="158" font-size="20">$ sastra "fix the failing test"</text>
-    <text x="960" y="194" font-size="20">running in terminal ...</text>
+  <!-- terminal window, right side -->
+  <g>
+    <rect x="760" y="58" width="448" height="186" rx="14" fill="#0B1220"/>
+    <rect x="760" y="58" width="448" height="38" rx="14" fill="#151F38"/>
+    <circle cx="784" cy="77" r="6" fill="#FF5F57"/>
+    <circle cx="806" cy="77" r="6" fill="#FEBC2E"/>
+    <circle cx="828" cy="77" r="6" fill="#28C840"/>
+    <text x="970" y="84" font-family="Consolas, monospace" font-size="16" fill="#8FA3D9" text-anchor="middle">sastracode</text>
+    <g font-family="Consolas, monospace">
+      <text x="786" y="126" font-size="17" fill="#C792EA">$ </text>
+      <text x="812" y="126" font-size="17" fill="#82AAFF">sastra</text>
+      <text x="866" y="126" font-size="17" fill="#C792EA">"add dark mode"</text>
+      <text x="812" y="154" font-size="17" fill="#89DDFF">reading AgentScreen.kt ...</text>
+      <text x="812" y="182" font-size="17" fill="#89DDFF">editing 3 files</text>
+      <text x="786" y="212" font-size="17" fill="#C792EA">✓ </text>
+      <text x="806" y="212" font-size="17" fill="#C3E88D">done in 18.4s</text>
+    </g>
   </g>
 
-  <!-- content -->
-  <g font-family="Consolas, Consolas, monospace">
-    <text x="72" y="96" font-size="22" fill="#8FA3D9">// installable builds</text>
+  <!-- left content -->
+  <g font-family="Consolas, monospace">
+    <text x="72" y="92" font-size="20" fill="#64748B">// builds for android 8+</text>
   </g>
-  <text x="68" y="172" font-family="Segoe UI, Arial, sans-serif" font-size="86" font-weight="700" fill="url(#name)">SastraCode</text>
-  <text x="72" y="216" font-family="Consolas, Consolas, monospace" font-size="24" fill="#A9B7E6">coding assistant for Android</text>
+  <text x="66" y="176" font-family="Segoe UI, Arial, sans-serif" font-size="88" font-weight="800" fill="url(#wordmark)">SastraCode</text>
+  <text x="72" y="220" font-family="Consolas, monospace" font-size="23" fill="#B9C7E6">coding assistant for Android</text>
 
   <g>
-    <rect x="72" y="240" width="250" height="34" rx="17" fill="#1B2547"/>
-    <text x="88" y="263" font-family="Consolas, Consolas, monospace" font-size="19" fill="#8B7CFF">latest: v2.3 · apk</text>
-    <circle cx="306" cy="257" r="4" fill="#5B8CFF"/>
+    <rect x="72" y="242" width="252" height="34" rx="17" fill="#22D3EE" fill-opacity="0.12"/>
+    <rect x="72" y="242" width="252" height="34" rx="17" stroke="#22D3EE" stroke-opacity="0.45"/>
+    <text x="88" y="264" font-family="Consolas, monospace" font-size="18" fill="#67E8F9">download: latest release</text>
   </g>
 </svg>
