@@ -10,10 +10,10 @@
 
 <p align="center">
   <a href="https://github.com/vikas0vks/sastracode-builds/releases/latest">
-    <img src="https://img.shields.io/badge/download-latest%20release-22D3EE?style=for-the-badge" alt="Download the latest release" />
+    <img src="https://img.shields.io/badge/download-latest%20release-22D3EE?cb=2&style=for-the-badge" alt="Download the latest release" />
   </a>
-  <img src="https://img.shields.io/badge/auto-built-on%20push-818CF8?style=for-the-badge" alt="Auto built on push" />
-  <a href="https://github.com/vikas0vks"><img src="https://img.shields.io/badge/by-vikas0vks-181717?style=for-the-badge&logo=github" alt="By vikas0vks" /></a>
+  <img src="https://img.shields.io/badge/auto-built-on%20push-818CF8?cb=2&style=for-the-badge" alt="Auto built on push" />
+  <a href="https://github.com/vikas0vks"><img src="https://img.shields.io/badge/by-vikas0vks-181717?cb=2&style=for-the-badge&logo=github" alt="By vikas0vks" /></a>
 </p>
 
 The application source is private and not published here. Every release here is built automatically
